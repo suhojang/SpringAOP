@@ -38,7 +38,7 @@
     <artifactId>spring-boot-starter-aop</artifactId>
 </dependency>
   ```
-+ PointCut && JoinPoint 
++ PointCut && JoinPoints
   | Pointcut | JoinPoints |
   | ----- | ----- |
   | execution(public * *(..)) | public 메소드 실행 |
