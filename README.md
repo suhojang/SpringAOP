@@ -29,7 +29,7 @@
   + Introdution : 클래스에 인터페이스와 구현을 추가하는 특수한 Advice
 
 + Dependency
-```
+```xml
 <dependency>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-web</artifactId>
@@ -47,7 +47,7 @@
 </dependency>
   ```
 + Gradle
-```
+```groovy
 compile('org.springframework.boot:spring-boot-starter-web')
 compile('org.springframework.boot:spring-boot-starter-test')
 compile('org.springframework.boot:spring-boot-starter-aop')
