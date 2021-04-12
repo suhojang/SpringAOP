@@ -69,7 +69,7 @@ compile('org.springframework.boot:spring-boot-starter-aop')
   | bean(*) | 모든 빈 | 
   | bean(jsh*) | 이름이 'jsh'로 시작되는 모든 빈 |
   
-  + Config 파일을 생성한 후 @Component로 선언하고 @EnableAspectJAutoProxy를 적용하여 AOP를 찾을 수 있게 처리
++ Config 파일을 생성한 후 @Component로 선언하고 @EnableAspectJAutoProxy를 적용하여 AOP를 찾을 수 있게 처리
 ```
 package com.jsh.aop.config;
 
@@ -81,7 +81,7 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 public class AspectJConfig {
 }
 ```
-  + 공통기능을 정의하고 공통 기능이 사용 될 시점을 정의
++ 공통기능을 정의하고 공통 기능이 사용 될 시점을 정의
 ```
 package com.jsh.aop.component;
 
@@ -125,7 +125,7 @@ public class TestAspectJ {
 }
 ```
 
-  + Controller에 URI를 정의하고 AOP가 작동 할 수 있게 Service 생성
++ Controller에 URI를 정의하고 AOP가 작동 할 수 있게 Service 생성
 ```
 package com.jsh.aop.controller;
 
