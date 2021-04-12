@@ -178,7 +178,7 @@ public class TestAopServiceImpl implements TestAopService {
 }
 ```
 
-+ http://localhost:8080/aop
++ AOP URI Call - http://localhost:8080/aop
 ```
 2021-04-12 12:37:19.745  INFO 24164 --- [nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-04-12 12:37:19.745  INFO 24164 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
@@ -192,7 +192,7 @@ public class TestAopServiceImpl implements TestAopService {
 2021-04-12 12:37:19.774  INFO 24164 --- [nio-8080-exec-2] com.jsh.aop.component.TestAspectJ        : =============== onAroundHandler after
 ```
 
-+ http://localhost:8080/noAop
++ NO AOP URI Call - http://localhost:8080/noAop
 ```
 2021-04-12 12:38:17.990  INFO 24164 --- [nio-8080-exec-4] c.j.aop.service.impl.TestAopServiceImpl  : Hello, Spring Boot No AOP
 ```
