@@ -20,11 +20,13 @@
     + Aspect: PointCut + Advice + (Introduction)
 
 + Advice 종류
-  + Before : join point가 실행되기 이전 시점에 실행되는 advice. Exception을 던지지 않는 이상에야 join point의 실행을 막을 수는 없음
-  + After returning : join point가 완료되고 리턴한 다음에 실행되는 advice
-  + After throwing : join point가 Exception을 던지며 종료된 다음에 실행되는 advice
-  + After : join point가 정상적으로 종료된 여부에 관계 없이 항상 실행되는 advice
-  + Around : method 호출처럼 join point를 둘러싸는 advice. 가장 강력한 종류의 advice로 method의 호출의 이전과 이후에 특정한 행동을 수행하도록 하는 것도 가능. join point를 실행할 것인가 아니면 자체적인 값을 리턴하거나 Exception을 던져서 생략할 것인가 결정할 수도 있음
+  + Before : 타겟의 메서드가 실행되기 이전(before) 시점에 처리해야 할 필요가 있는 부가기능을 정의한다. Joinpoint 앞에서 실행되는 Advice
+  + After returning : 타겟의 메서드가 정상적으로 실행된 이후(after) 시점에 처리해야 할 필요가 있는 부가기능을 정의한다. Jointpoint 메서드 호출이 정상적으로 종료된 뒤에 실행되는 Advice
+  + After throwing : 타겟의 메서드가 예외를 발생된 이후(after) 시점에 처리해야 할 필요가 있는 부가기능을 정의한다. 예외가 던져질 때 실행되는 Advice
+  + After : 메서드가 정상적으로 실행되는지 또는 예외를 발생시키는지 여부에 상관없이 어드바이스를 정의한다. Joinpoint 가 정상적으로 종료된 여부에 관계 없이 항상 실행되는 Advice
+  + Around : 타겟의 메서드가 호출되기 이전(before) 시점과 이후 (after) 시점에 모두 처리해야 할 필요가 있는
+부가기능을 정의한다. Joinpoint 앞과 뒤에서 실행되는 Adcvice
+  + Introdution : 클래스에 인터페이스와 구현을 추가하는 특수한 Advice
 
 + Dependency
 ```
