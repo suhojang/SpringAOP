@@ -51,6 +51,5 @@
   | within(com.jsh.service..*) | service 패키지 및 하위 패키지의 모든 결합점 (클래스 포함) |
   | bean(*JSHRepository) | 이름이 “JSHRepository”로 끝나는 모든 빈 | 
   | bean(*) | 모든 빈 | 
-  | bean(jsh*) | 이름이 'jsh'로 시작되는 모든 빈 | 
-  | (bean(*dataSource) || bean(*DataSource)) | 이름이 “dataSource” 나 “DataSource” 으로 끝나는 모든 빈 |
+  | bean(jsh*) | 이름이 'jsh'로 시작되는 모든 빈 |
   
