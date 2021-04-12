@@ -38,6 +38,14 @@
     <artifactId>spring-boot-starter-aop</artifactId>
 </dependency>
   ```
++ Gradle
+```
+compile('org.springframework.boot:spring-boot-starter-web')
+compile('org.springframework.boot:spring-boot-starter-test')
+compile('org.springframework.boot:spring-boot-starter-aop')
+
+```
+
 + PointCut && JoinPoints
   | Pointcut | JoinPoints |
   | ----- | ----- |
