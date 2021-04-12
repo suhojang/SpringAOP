@@ -69,7 +69,6 @@ compile('org.springframework.boot:spring-boot-starter-aop')
   | bean(*) | 모든 빈 | 
   | bean(jsh*) | 이름이 'jsh'로 시작되는 모든 빈 |
   
-+ Example
   + Config 파일을 생성한 후 @Component로 선언하고 @EnableAspectJAutoProxy를 적용하여 AOP를 찾을 수 있게 처리
 ```
 package com.jsh.aop.config;
