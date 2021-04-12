@@ -18,8 +18,14 @@
     + Weaving: PointCut에 의해서 결정된 JoinPoint에 지정된 Advice를 삽입하는 과정(CrossCutting)
     + Introduction: 정적인 방식의 AOP 기술
     + Aspect: PointCut + Advice + (Introduction)
-   
- 
+
++ Advice 종류
+  + Before : join point가 실행되기 이전 시점에 실행되는 advice. Exception을 던지지 않는 이상에야 join point의 실행을 막을 수는 없음
+  + After returning : join point가 완료되고 리턴한 다음에 실행되는 advice
+  + After throwing : join point가 Exception을 던지며 종료된 다음에 실행되는 advice
+  + After : join point가 정상적으로 종료된 여부에 관계 없이 항상 실행되는 advice
+  + Around : method 호출처럼 join point를 둘러싸는 advice. 가장 강력한 종류의 advice로 method의 호출의 이전과 이후에 특정한 행동을 수행하도록 하는 것도 가능. join point를 실행할 것인가 아니면 자체적인 값을 리턴하거나 Exception을 던져서 생략할 것인가 결정할 수도 있음
+
 + Dependency
 ```
 <dependency>
